@@ -1,0 +1,275 @@
+@import "tailwindcss";
+
+/* =====================================
+   GLOBAL SETTINGS
+===================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background: #050816;
+  color: white;
+
+  font-family:
+    Inter,
+    system-ui,
+    sans-serif;
+
+  overflow-x: hidden;
+}
+
+/* =====================================
+   SELECTION
+===================================== */
+
+::selection {
+  background: #22d3ee;
+  color: #050816;
+}
+
+/* =====================================
+   SCROLLBAR
+===================================== */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #22d3ee;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #67e8f9;
+}
+
+/* =====================================
+   BACKGROUND GLOW
+===================================== */
+
+body::before {
+  content: "";
+
+  position: fixed;
+
+  top: -200px;
+  left: -200px;
+
+  width: 500px;
+  height: 500px;
+
+  background: rgba(34, 211, 238, 0.08);
+
+  border-radius: 50%;
+
+  filter: blur(120px);
+
+  z-index: -1;
+}
+
+body::after {
+  content: "";
+
+  position: fixed;
+
+  right: -200px;
+  bottom: -200px;
+
+  width: 500px;
+  height: 500px;
+
+  background: rgba(59, 130, 246, 0.08);
+
+  border-radius: 50%;
+
+  filter: blur(120px);
+
+  z-index: -1;
+}
+
+/* =====================================
+   GLASS EFFECT
+===================================== */
+
+.glass {
+  background: rgba(15, 23, 42, 0.6);
+
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* =====================================
+   CYBER BORDER
+===================================== */
+
+.cyber-border {
+  border: 1px solid rgba(34, 211, 238, 0.2);
+
+  transition: all 0.3s ease;
+}
+
+.cyber-border:hover {
+  border-color: #22d3ee;
+
+  box-shadow:
+    0 0 15px rgba(34, 211, 238, 0.3);
+}
+
+/* =====================================
+   CYAN GLOW
+===================================== */
+
+.glow-cyan {
+  box-shadow:
+    0 0 20px rgba(34, 211, 238, 0.35);
+}
+
+/* =====================================
+   TEXT GRADIENT
+===================================== */
+
+.gradient-text {
+  background:
+    linear-gradient(
+      to right,
+      #22d3ee,
+      #60a5fa
+    );
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+}
+
+/* =====================================
+   HERO FLOATING ANIMATION
+===================================== */
+
+@keyframes floating {
+
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.floating {
+  animation:
+    floating 4s ease-in-out infinite;
+}
+
+/* =====================================
+   FADE UP
+===================================== */
+
+@keyframes fadeUp {
+
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation:
+    fadeUp 0.8s ease forwards;
+}
+
+/* =====================================
+   PULSE GLOW
+===================================== */
+
+@keyframes pulseGlow {
+
+  0% {
+    box-shadow:
+      0 0 0 rgba(34, 211, 238, 0);
+  }
+
+  50% {
+    box-shadow:
+      0 0 20px rgba(34, 211, 238, 0.4);
+  }
+
+  100% {
+    box-shadow:
+      0 0 0 rgba(34, 211, 238, 0);
+  }
+}
+
+.pulse-glow {
+  animation:
+    pulseGlow 3s infinite;
+}
+
+/* =====================================
+   TERMINAL STYLING
+===================================== */
+
+.terminal-text {
+  font-family:
+    "Courier New",
+    monospace;
+}
+
+/* =====================================
+   IMAGE HOVER
+===================================== */
+
+.dashboard-image {
+  transition:
+    transform 0.4s ease;
+}
+
+.dashboard-image:hover {
+  transform: scale(1.05);
+}
+
+/* =====================================
+   SECTION SPACING
+===================================== */
+
+section {
+  scroll-margin-top: 100px;
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 768px) {
+
+  h1 {
+    line-height: 1.1;
+  }
+
+  section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
