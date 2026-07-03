@@ -1,20 +1,69 @@
-<<<<<<< HEAD
-# React + Vite
+# 👋 Hi, I'm Vipin Kaushik
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <h3 align="center">📊 Data Analyst | Python | SQL | Power BI | Excel</h3>
+</p>
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 About This Portfolio
 
-## React Compiler
+This is my personal portfolio website built to showcase my skills, projects, dashboards, and learning journey in Data Analytics and Business Intelligence.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🌐 Features
 
-## Expanding the ESLint configuration
+- ✨ Modern & Responsive UI
+- 📊 Data Analytics Dashboard Showcase
+- 💼 Projects Section
+- 🧠 Skills & Experience
+- 📄 Resume Download
+- 📱 Mobile Friendly
+- ⚡ Fast Performance
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# vipin-portfolio
->>>>>>> b189c81d3278c484bf991ec3c0b2b4c297de5e48
+---
+
+## 🛠 Tech Stack
+
+- ⚛️ React
+- ⚡ Vite
+- 🎨 Tailwind CSS
+- 🎬 Framer Motion
+- 📧 EmailJS
+- 🎯 Lucide React
+- ⭐ React Icons
+
+---
+
+## 📂 Project Structure
+
+```text
+src/
+ ├── components/
+ ├── data/
+ ├── assets/
+ ├── App.jsx
+ └── main.jsx
+
+public/
+```
+
+---
+
+
+## 📄 Resume
+
+Resume is available inside the portfolio.
+
+---
+
+## ⭐ If you like this project
+
+Give this repository a ⭐ on GitHub.
+
+---
+
+## 👨‍💻 Author
+
+**Vipin Kaushik**
+
+Made with ❤️ using React + Vite + Tailwind CSS
