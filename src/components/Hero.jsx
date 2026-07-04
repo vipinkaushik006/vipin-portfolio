@@ -48,11 +48,11 @@ export default function Hero() {
   "
           />
 
-          <h1 className="text-5xl md:text-7xl font-extrabold leading-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold leading-tight">
             {personal.name}
           </h1>
 
-          <h2 className="text-cyan-400 text-2xl md:text-3xl mt-6 font-semibold">
+          <h2 className="text-cyan-400 text-2xl sm:text-3xl md:text-4xl mt-6 font-semibold">
             {personal.role}
           </h2>
 

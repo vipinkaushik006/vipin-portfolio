@@ -168,7 +168,7 @@ export default function Projects() {
 
             {/* Actions */}
 
-            <div className="flex gap-4 mt-8">
+            <div className="flex flex-col sm:flex-row gap-4 mt-8">
               <a
                 href={project.github}
                 target="_blank"
@@ -176,7 +176,9 @@ export default function Projects() {
                 className="
                   flex
                   items-center
+                  justify-center
                   gap-2
+                  flex-1
                   px-4
                   py-3
                   rounded-xl
@@ -196,7 +198,9 @@ export default function Projects() {
                 className="
                   flex
                   items-center
+                  justify-center
                   gap-2
+                  flex-1
                   px-4
                   py-3
                   rounded-xl
@@ -215,7 +219,9 @@ export default function Projects() {
                 className="
       flex
       items-center
+      justify-center
       gap-2
+      flex-1
       px-4
       py-3
       rounded-xl
