@@ -8,13 +8,13 @@ export default function Hero() {
   const { personal, social } = portfolioData;
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 relative">
+    <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 relative overflow-x-hidden">
       {/* Background Grid */}
       <div className="absolute inset-0 opacity-10 pointer-events-none">
         <div className="h-full w-full bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:40px_40px]" />
       </div>
 
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10">
+      <div className="w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center relative z-10 px-2 sm:px-0">
         {/* Left Content */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
@@ -34,8 +34,12 @@ export default function Hero() {
             fetchpriority="high"
             decoding="async"
             className="
-    w-44
-    h-44
+    w-32
+    h-32
+    sm:w-40
+    sm:h-40
+    lg:w-44
+    lg:h-44
     rounded-full
     object-cover
     border-4
@@ -48,7 +52,7 @@ export default function Hero() {
   "
           />
 
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold leading-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold leading-tight break-words max-w-full">
             {personal.name}
           </h1>
 
@@ -60,16 +64,16 @@ export default function Hero() {
             {personal.tagline}
           </p>
 
-          <div className="flex items-center gap-2 text-slate-500 mt-6">
+          <div className="flex flex-wrap items-center gap-2 text-slate-500 mt-6">
             <MapPin size={18} />
 
             {personal.location}
           </div>
 
-          <div className="mt-8 flex flex-wrap gap-4">
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 w-full">
             <a
               href="#projects"
-              className="bg-cyan-500 hover:bg-cyan-400 transition px-6 py-3 rounded-xl font-semibold flex items-center gap-2 text-black"
+              className="w-full sm:w-auto bg-cyan-500 hover:bg-cyan-400 transition px-6 py-3 rounded-xl font-semibold flex items-center justify-center gap-2 text-black"
             >
               View Projects
               <ArrowRight size={18} />
@@ -79,7 +83,7 @@ export default function Hero() {
               href={personal.resume}
               target="_blank"
               rel="noreferrer"
-              className="border border-slate-700 hover:border-cyan-400 transition px-6 py-3 rounded-xl flex items-center gap-2"
+              className="w-full sm:w-auto border border-slate-700 hover:border-cyan-400 transition px-6 py-3 rounded-xl flex items-center justify-center gap-2"
             >
               <Download size={18} />
               Resume
@@ -88,7 +92,7 @@ export default function Hero() {
 
           {/* Social Links */}
 
-         <div className="flex gap-4 mt-8">
+         <div className="flex justify-center sm:justify-start gap-4 mt-8">
   <a
     href={social.github}
     target="_blank"
@@ -115,7 +119,7 @@ export default function Hero() {
           initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="relative"
+          className="relative hidden lg:block"
         >
           <div className="bg-slate-900/70 backdrop-blur-xl border border-slate-800 rounded-3xl p-6">
             {/* Window Header */}

@@ -55,7 +55,8 @@ export default function Navbar() {
         className="
           max-w-7xl
           mx-auto
-          px-6
+          px-4
+          sm:px-6
           h-20
           flex
           items-center
